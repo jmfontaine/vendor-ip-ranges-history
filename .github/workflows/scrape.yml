@@ -1,0 +1,27 @@
+name: Scrape latest data
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '7 * * * *'
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out this repo
+        uses: actions/checkout@v2
+      - name: Fetch latest data
+        run: |-
+          curl --output aws.json https://ip-ranges.amazonaws.com/ip-ranges.json
+          curl --output google.json https://www.gstatic.com/ipranges/goog.json
+          curl --output google_cloud.json https://www.gstatic.com/ipranges/cloud.json
+          curl --output cloudflare.txt https://www.cloudflare.com/ips-v4; sed --expression='$a\' --in-place cloudflare.txt; curl https://www.cloudflare.com/ips-v6 >> cloudflare.txt
+      - name: Commit and push if there are changes
+        run: |-
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add --all
+          git commit --message "Latest data: $(date --utc)" || exit 0
+          git push
