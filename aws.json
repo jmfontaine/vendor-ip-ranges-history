@@ -1,6 +1,6 @@
 {
-  "syncToken": "1644431600",
-  "createDate": "2022-02-09-18-33-20",
+  "syncToken": "1644448400",
+  "createDate": "2022-02-09-23-13-20",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -4099,6 +4099,12 @@
       "region": "ca-central-1",
       "service": "AMAZON",
       "network_border_group": "ca-central-1"
+    },
+    {
+      "ip_prefix": "16.12.10.0/23",
+      "region": "eu-north-1",
+      "service": "AMAZON",
+      "network_border_group": "eu-north-1"
     },
     {
       "ip_prefix": "52.219.148.0/23",
@@ -14247,6 +14253,12 @@
       "network_border_group": "ap-northeast-1"
     },
     {
+      "ip_prefix": "16.12.9.0/24",
+      "region": "eu-north-1",
+      "service": "AMAZON",
+      "network_border_group": "eu-north-1"
+    },
+    {
       "ip_prefix": "18.180.0.0/15",
       "region": "ap-northeast-1",
       "service": "AMAZON",
@@ -16945,6 +16957,12 @@
       "region": "us-east-2",
       "service": "AMAZON",
       "network_border_group": "us-east-2"
+    },
+    {
+      "ip_prefix": "16.12.12.0/23",
+      "region": "il-central-1",
+      "service": "AMAZON",
+      "network_border_group": "il-central-1"
     },
     {
       "ip_prefix": "52.46.191.150/31",
@@ -23907,6 +23925,12 @@
       "network_border_group": "us-east-2"
     },
     {
+      "ip_prefix": "16.12.10.0/23",
+      "region": "eu-north-1",
+      "service": "S3",
+      "network_border_group": "eu-north-1"
+    },
+    {
       "ip_prefix": "52.219.148.0/23",
       "region": "ap-northeast-2",
       "service": "S3",
@@ -24369,6 +24393,12 @@
       "network_border_group": "eu-west-2"
     },
     {
+      "ip_prefix": "16.12.9.0/24",
+      "region": "eu-north-1",
+      "service": "S3",
+      "network_border_group": "eu-north-1"
+    },
+    {
       "ip_prefix": "52.95.184.0/23",
       "region": "ap-south-2",
       "service": "S3",
@@ -24463,6 +24493,12 @@
       "region": "us-east-2",
       "service": "S3",
       "network_border_group": "us-east-2"
+    },
+    {
+      "ip_prefix": "16.12.12.0/23",
+      "region": "il-central-1",
+      "service": "S3",
+      "network_border_group": "il-central-1"
     },
     {
       "ip_prefix": "76.223.103.0/24",
