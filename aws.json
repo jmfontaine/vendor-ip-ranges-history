@@ -1,6 +1,6 @@
 {
-  "syncToken": "1793941625",
-  "createDate": "2026-11-06-05-07-05",
+  "syncToken": "1793987225",
+  "createDate": "2026-11-06-17-47-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -43657,6 +43657,12 @@
       "region": "eu-south-2",
       "service": "EC2",
       "network_border_group": "eu-south-2"
+    },
+    {
+      "ip_prefix": "191.166.0.0/16",
+      "region": "mx-central-1",
+      "service": "EC2",
+      "network_border_group": "mx-central-1"
     },
     {
       "ip_prefix": "3.4.1.0/24",
